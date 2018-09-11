@@ -53,18 +53,6 @@
  */
 - (id)initWithEndpointURL:(NSURL *)URL;
 
-/**
- Creates a request with the specified HTTP method, parameters, and request ID.
- 
- @param method The HTTP method. Must not be `nil`.
- @param parameters The parameters to encode into the request. Must be either an `NSDictionary` or `NSArray`.
- @param requestId The ID of the request.
- 
- @return A JSON-RPC-encoded request.
- */
-- (NSMutableURLRequest *)requestWithMethod:(NSString *)method
-                                parameters:(id)parameters
-                                 requestId:(id)requestId;
 
 /**
  Creates a request with the specified method, and enqueues a request operation for it.
